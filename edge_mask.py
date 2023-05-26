@@ -9,7 +9,6 @@ class EdgeMask:
         self.path = path
 
     # Read image
-
     def read_img(self, p):
         img = cv2.imread(p)
         assert img is not None, "Image not found in path, check path again"
