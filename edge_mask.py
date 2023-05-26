@@ -18,6 +18,7 @@ class EdgeMask:
     # Show image
     def show_img(self, img):
         plt.imshow(img)
+        edges = self.edge(img)
         plt.subplot(121), plt.imshow(img, cmap='gray')
         plt.title('Original Image'), plt.xticks([]), plt.yticks([])
         plt.subplot(122), plt.imshow(edges, cmap='gray')
